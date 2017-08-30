@@ -1,5 +1,9 @@
 function main(){
 
+var quoteTxt;
+var quoteAut;
+
+
 $('#newQuote').click( function(){
 
 
@@ -16,6 +20,8 @@ $('#newQuote').click( function(){
         console.log(data);
           $(".qoute-row").hide().html('<p class=qoute>' + data.quoteText + '</p>').fadeIn(1000);
           $(".author-row").hide().html('<p class=author> - ' + data.quoteAuthor + '</p>').fadeIn(1500);
+          quoteTxt = data.quoteText;
+          quoteAut = data.quoteAuthor;
       },
 
       function(err) {
@@ -28,7 +34,7 @@ $('#newQuote').click( function(){
 
 $('#tweet-quote').click(function(){
 
- $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + data.quoteText + " -by " + data.quoteAuthor);
+ $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + quoteTxt + " -by " + quoteAut);
 
 
 });
