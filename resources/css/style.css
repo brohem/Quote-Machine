@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  background-color: rgb(197, 208, 224);
+  font-size: 28px;
+}
+
+.headline{
+  margin-top: 80px;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  color: blue;
+  text-shadow: 2.5px 2.5px 5px gray;
+}
+
+.box{
+  margin-top: 40px;
+  background-size: cover;
+  background-color: white;
+  padding: 40px 0;
+  line-height: 80px;
+  box-shadow: 15px 15px 50px rgb(84, 130, 221);
+}
+
+.button{
+  cursor: pointer;
+}
+
+#newQuote{
+
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 8px gray;
+  border: none;
+}
+
+.alert{
+  color: red;
+  text-transform: capitalize;
+}
